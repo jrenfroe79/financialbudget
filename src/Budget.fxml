@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="financialbudget.BudgetController">
+   <children>
+      <VBox alignment="CENTER" layoutX="200.0" layoutY="20.0" spacing="10.0">
+         <children>
+            <TextField fx:id="incomeTextField" promptText="Enter Total Income" />
+            <TextField fx:id="mortgageTextField" promptText="Mortgage Expense" />
+            <TextField fx:id="electricTextField" promptText="Electric Expense" />
+            <TextField fx:id="carPaymentTextField" promptText="Car Payment Expense" />
+            <TextField fx:id="insuranceTextField" promptText="Insurance Expense" />
+            <TextField fx:id="foodTextField" promptText="Food Expense" />
+            <TextField fx:id="entertainmentTextField" promptText="Entertainment Expense" />
+            <Button onAction="#calculateRemaining" text="Calculate Remaining" />
+            <Label fx:id="remainingLabel" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
+
